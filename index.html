@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="keywords" content="Ключевые слова" />
+		<title>ШАПСКИЙ АЛЕКСЕЙ СЕРГЕЕВИЧ</title>
+		<style>
+			body {
+				background-color: green;
+				font-size: 18pt;
+				font-family: Arial, sans-serif;
+			}
+			.FIO {
+				text-align: end; /* Вырвнивание по правому краю */
+			}
+			.group {
+				color: red; /* Красный цвет текста */
+				text-decoration: line-through; /* Зачёркнутый текст */
+			}
+			.hobby {
+				text-decoration: underline; /* Подчёркнутый текст */
+				text-align: center; /* Вырвнивание по центру */
+			}
+			.image {
+				display: flex; /* Начало с нового строки */
+			}
+			.img__html {
+				float: left; /* Вырвнивание по левому краю изображение */
+			}
+			.registration,
+			.password {
+				display: inline; /* В одной строке несколько элементов */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="formattext">
+			<h1 class="FIO">ШАПСКИЙ АЛЕКСЕЙ СЕРГЕЕВИЧ</h1>
+			<!---->
+			<p class="group">ПЗТ - 38</p>
+			<p class="curse"><i>3 КУРС</i></p>
+			<p class="hobby">Просто погулять и ничего большего</p>
+		</div>
+
+		<div class="list">
+			<ul>
+				<li>Политэхничны калледж</li>
+				<li>Квасоуская СШ</li>
+				<li>Унивирситэт имя Янки Купалы</li>
+			</ul>
+		</div>
+
+		<div class="image">
+			<img class="img__html" src="/img/html.png" alt="HTML" />
+		</div>
+
+		<div class="form">
+			<h2>Форма:</h2>
+
+			<h2>Внутренняя ссылка на форму:</h2>
+			<p><a href="index copy.html">Перейти к форме</a></p>
+
+			<h2>Гиперссылка на электронный архив:</h2>
+			<p><a href="Accounting.7z">Скачать архив</a></p>
+		</div>
+
+		<table border="1">
+			<tr>
+				<td></td>
+				<td></td>
+				<td rowspan="2" style="background-color: darkgray">Иванов</td>
+				<td>Пример</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="background-color: gray">Задача</td>
+				<td></td>
+			</tr>
+		</table>
+
+		<div>
+			<p>Логин:</p>
+			<div class="registration">
+				<input placeholder="Имя" type="text" name="username" />
+				<a href="">Зарегистрироваться</a>
+			</div>
+		</div>
+
+		<div>
+			<p>Пароль:</p>
+			<div class="password">
+				<input placeholder="Пароль" type="password" name="userpass" />
+				<a href="">Забыли пароль?</a>
+			</div>
+		</div>
+
+		<div>
+			<button type="submit">Войти</button>
+		</div>
+	</body>
+</html>
